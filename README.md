@@ -105,22 +105,31 @@ Provides a simple UI for:
 ## 📁 Project Structure
 
 ```bash
-quant_finance_pipeline/
-├── dags/
-│   ├── train_ai_finance_model.py
-│   └── predict_ai_finance_model.py
-├── models/
-│   └── best_model.h5
+quant_finance/
+├── pipeline/
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── model.py
+│   ├── train.py
+│   ├── predict.py
+│   ├── evaluation.py
+│   ├── portfolio.py
+│   ├── metrics.py
+│   └── __init__.py
 ├── data/
-│   └── asset_data.csv
-├── streamlit_app/
-│   └── dashboard.py
-├── notebooks/
-│   └── development_notebook.ipynb
-├── utils/
-│   └── preprocessing.py
-│   └── metrics.py
-└── README.md
+│   └── price.csv
+├── models/
+│   └── hybrid_lstm_transformer_model.h5
+├── airflow/
+│   └── dags/
+│       └── retrain_pipeline.py
+├── reports/
+│   ├── HLD.md
+│   ├── LLD.md
+│   └── Hybrid_DL_Timeseries_report.pdf
+└── streamlit_app.py
+```
+
 
 
 
