@@ -26,15 +26,21 @@ quant_finance_pipeline/
 │   ├── model.py
 │   ├── train.py
 │   ├── predict.py
+│   ├── evaluation.py
+│   ├── portfolio.py
+│   ├── metrics.py
 │   └── __init__.py
 ├── data/
+│   └── price.csv
 ├── models/
+│   └── hybrid_lstm_transformer_model.h5
 ├── airflow/
 │   └── dags/
 │       └── retrain_pipeline.py
-├── evaluation.py
-├── portfolio.py
-├── metrics.py
+├── reports/
+│   ├── HLD.md
+│   ├── LLD.md
+│   └── Hybrid_DL_Timeseries_report.pdf
 └── streamlit_app.py
 ```
 
