@@ -121,6 +121,9 @@ quant_finance_pipeline/
 │   └── preprocessing.py
 │   └── metrics.py
 └── README.md
+
+
+
 🧰 Requirements
 Python 3.9+
 
@@ -130,15 +133,19 @@ Keras
 
 Keras-Tuner
 
-Pandas, NumPy
+Pandas
+
+NumPy
 
 scikit-learn
 
 yfinance
 
-Apache Airflow
+# Airflow (installing with constraints)
+#pip install "apache-airflow==2.7.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.7.0/constraints-3.8.txt"
 
 Streamlit
+
 
 🚀 Getting Started
 bash
@@ -150,13 +157,17 @@ python -m venv fin_env
 source fin_env/bin/activate
 
 # Install dependencies
+pip install "apache-airflow==2.7.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.7.0/constraints-3.8.txt"
 pip install -r requirements.txt
 
 # Run Streamlit
-streamlit run streamlit_app/dashboard.py
+streamlit run app.py
 
 # Run Airflow
 airflow webserver -p 8080
 airflow scheduler
+
+
 📬 Contact
-For further enhancements, collaboration, or deployment support, feel free to reach out.
+For further enhancements, collaboration, or deployment support, feel free to reach out. Navin Dwivedy +917307795703
+Sr. Data Scientist / AI /ML Enthusiast
